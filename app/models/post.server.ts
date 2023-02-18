@@ -16,6 +16,6 @@ type Post = {
   }
   
   export async function createPost(post) {
-    post: Pick<Post, "slug" | "title" | "markdown">
+    // post: Pick<Post, "slug" | "title" | "markdown">
     return prisma.post.create({ data: post });
   }  
